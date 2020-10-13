@@ -4,10 +4,10 @@ metadata:
   name: podinfo
   namespace: projectcontour
   annotations:
-    fluxcd.io/ignore: "true"
+    fluxcd.io/ignore: "false"
 spec:
   virtualhost:
-    fqdn: podinfo.example.com
+    fqdn: podinfo.devopsnoob.club
     tls:
       secretName: cert
   includes:
