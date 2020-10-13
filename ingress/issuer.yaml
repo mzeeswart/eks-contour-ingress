@@ -3,10 +3,10 @@ kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
   annotations:
-    fluxcd.io/ignore: "true"
+    fluxcd.io/ignore: "false"
 spec:
   acme:
-    email: user@users.noreply.github.com
+    email: mzeeswart@users.noreply.github.com
     privateKeySecretRef:
       name: letsencrypt-prod
     server: https://acme-v02.api.letsencrypt.org/directory
